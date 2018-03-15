@@ -12,7 +12,7 @@ install {
 
             // Add your description here
             name mapintergration
-            description A wrapper for button on Android
+            description A wrapper for button 
             url https://github.com/dippatra/map-button-test
 
             // Set your license
