@@ -1,0 +1,41 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = com.mapintegration // Maven Group ID for the artifact
+
+install {
+    repositories.mavenInstaller {
+        // This generates POM.xml with proper parameters
+        pom.project {
+            packaging 'aar'
+            groupId com.mapintegration
+            artifactId map-intergration
+
+            // Add your description here
+            name mapintergration
+            description A wrapper for button on Android
+            url https://github.com/dippatra/map-button-test
+
+            // Set your license
+            licenses {
+                license {
+                    name The Apache Software License, Version 2.0
+                    url http://www.apache.org/licenses/LICENSE-2.0.txt
+                }
+            }
+            developers {
+                developer {
+                    id dippatra
+                    name dipankar patra
+                    email dipankar.patra@sanginfo.com
+                }
+            }
+            scm {
+                connection https://github.com/dippatra/map-button-test.git
+                developerConnection https://github.com/dippatra/map-button-test.git
+                url https://github.com/dippatra/map-button-test
+
+            }
+        }
+
+    }
+}
